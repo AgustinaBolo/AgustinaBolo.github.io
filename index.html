@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Translator & Subtitler</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Translation & Subtitling</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section id="home">
-    <h1>Welcome to My Portfolio</h1>
-    <p>I am a professional translator, interpreter, and subtitler passionate about bridging language barriers.</p>
-  </section>
-  
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="project">
-      <h3>Project 1: Subtitle Sample</h3>
-      <p>A sample subtitling project for a short film.</p>
-      <a href="link-to-your-sample" target="_blank">View Sample</a>
-    </div>
-    <div class="project">
-      <h3>Project 2: Translation Example</h3>
-      <p>A document I translated for an international client.</p>
-      <a href="link-to-your-sample" target="_blank">View Sample</a>
-    </div>
-  </section>
-  
-  <section id="about">
-    <h2>About Me</h2>
-    <p>With years of experience in translation and subtitling, I specialize in delivering accurate and culturally sensitive translations.</p>
-  </section>
-  
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out to me for projects or collaborations!</p>
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <footer>
-    <p>© 2024 Your Name. All rights reserved.</p>
-  </footer>
+    <section id="home" class="banner">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing my passion for languages through translation, subtitling, and interpretation projects.</p>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Sample translated document for a technical manual.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Subtitle file created for a short film.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Localized website content for an e-commerce platform.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+            I am passionate about bridging language barriers and connecting people through clear and accurate translations. My goal is to create impactful translations and subtitles that resonate with diverse audiences.
+        </p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you’d like to collaborate or have any questions, feel free to reach out!</p>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
