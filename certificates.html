@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for zoom functionality */
+        .modal-dialog {
+            max-width: 90%;
+            margin: auto;
+        }
+        .modal-body img {
+            width: 100%;
+            height: auto;
+        }
+        .modal-body iframe {
+            width: 100%;
+            height: 90vh; /* Set height to take most of the screen */
+            border: none;
+        }
+        /* Hover effect for images */
+        .certificate-card img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .certificate-card img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .certificate-title {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#languages">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Certificates Gallery -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" style="font-family: 'Playfair Display', serif;">Certificates</h2>
+            <div class="row g-4">
+                <!-- Certificate 1 -->
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <p class="certificate-title">German Language Certificate</p>
+                        <img src="/certificate1.jpg" class="img-fluid rounded shadow" alt="Certificate 1" data-bs-toggle="modal" data-bs-target="#modalZoom" onclick="openModal('/certificate1.jpg', 'German Language Certificate')">
+                    </div>
+                </div>
+                <!-- Embedded Badge -->
+                <div class="col-md-4">
+                    <div class="certificate-card text-center">
+                        <p class="certificate-title">TypeRacer Badge</p>
+                        <a href="https://data.typeracer.com/pit/profile?user=baxia&ref=badge" target="_top">
+                            <img src="https://data.typeracer.com/misc/badge?user=baxia" border="0" alt="TypeRacer.com scorecard for user baxia" class="img-fluid rounded shadow">
+                        </a>
+                    </div>
+                </div>
+                <!-- Certificate 3 -->
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <p class="certificate-title">English Language Certificate</p>
+                        <img src="/certificate3.jpg" class="img-fluid rounded shadow" alt="Certificate 3" data-bs-toggle="modal" data-bs-target="#modalZoom" onclick="openModal('/certificate3.jpg', 'English Language Certificate')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Zoom -->
+    <div class="modal fade" id="modalZoom" tabindex="-1" aria-labelledby="modalZoomLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalZoomLabel">Zoom View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Dynamic Content -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024. Bolo Luciana Agustina. Site created with assistance from ChatGPT.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to open modal with dynamic content
+        function openModal(contentUrl, title) {
+            const modalBody = document.querySelector('#modalZoom .modal-body');
+            const modalTitle = document.querySelector('#modalZoomLabel');
+            
+            modalTitle.textContent = title;
+
+            // Check if the content is an image or PDF
+            if (contentUrl.endsWith('.pdf')) {
+                modalBody.innerHTML = `<iframe src="${contentUrl}" class="pdf-embed"></iframe>`;
+            } else {
+                modalBody.innerHTML = `<img src="${contentUrl}" style="width:100%; height:auto;" alt="${title}">`;
+            }
+        }
+    </script>
+</body>
+</html>

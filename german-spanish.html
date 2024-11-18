@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="English-Spanish translation projects showcasing various technical and academic texts with translations.">
+    <title>Translation Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin-top: 30px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .parallel-text {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .original-text, .translated-text {
+            width: 45%;
+            min-width: 300px;
+            font-size: 1.1rem;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 100%; /* Ensure equal height for boxes */
+            display: flex; /* Added for equal height fix */
+            flex-direction: column; /* Ensure text stacks correctly */
+            justify-content: space-between; /* Distribute content evenly */
+        }
+        .arrow {
+            font-size: 2rem;
+            color: #007bff;
+            align-self: center;
+        }
+        /* Navbar styling */
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#languages">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <h1>English-Spanish Translation Pair</h1>
+
+        <!-- English-Spanish Translations -->
+        <section id="english-spanish" class="my-5">
+            <h2>English-Spanish Translations</h2>
+
+            <!-- Parallel Text 1 -->
+            <div class="parallel-text">
+                <div class="original-text">
+                    <p><strong>Medical Text (English):</strong></p>
+                    <p>Human anatomy is the scientific study of the body’s structures. It describes how the body is composed of various organs and systems that work together to maintain life. Anatomy can be studied on a macroscopic or microscopic level.</p>
+                </div>
+                
+                <div class="arrow">→</div>
+
+                <div class="translated-text">
+                    <p><strong>Medical Text (Spanish):</strong></p>
+                    <p>La anatomía humana es el estudio científico de las estructuras del cuerpo. Describe cómo el cuerpo está compuesto por diversos órganos y sistemas que trabajan juntos para mantener la vida. La anatomía se puede estudiar a nivel macroscópico o microscópico.</p>
+                </div>
+            </div>
+
+            <!-- Parallel Text 2 -->
+            <div class="parallel-text">
+                <div class="original-text">
+                    <p><strong>Computer Science Text (English):</strong></p>
+                    <p>This book introduces Python, one of the top programming languages today. Python is versatile and can be used for web development, data analysis, artificial intelligence, and more. With simple syntax, it is beginner-friendly yet powerful.</p>
+                </div>
+                
+                <div class="arrow">→</div>
+
+                <div class="translated-text">
+                    <p><strong>Computer Science Text (Spanish):</strong></p>
+                    <p>Este libro es una introducción a Python, uno de los lenguajes de programación más importantes hoy en día. Python es versátil y se puede usar para desarrollo web, análisis de datos, inteligencia artificial y más. Con una sintaxis simple, es apto para principiantes y, sin embargo, poderoso.</p>
+                </div>
+            </div>
+
+            <!-- Parallel Text 3 -->
+            <div class="parallel-text">
+                <div class="original-text">
+                    <p><strong>History Text (English):</strong></p>
+                    <p>History is more than a series of names and dates; those are simply its building blocks. It is a narrative of humanity’s past, a tapestry of events that shaped the world as we know it today. By understanding history, we understand ourselves.</p>
+                </div>
+                
+                <div class="arrow">→</div>
+
+                <div class="translated-text">
+                    <p><strong>History Text (Spanish):</strong></p>
+                    <p>La historia es más que una serie de nombres y fechas; esos son simplemente los cimientos. Es una narrativa del pasado de la humanidad, un tapiz de eventos que dieron forma al mundo tal como lo conocemos hoy. Al entender la historia, nos entendemos a nosotros mismos.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024. Bolo Luciana Agustina. Site created with assistance from ChatGPT.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
